@@ -1,0 +1,25 @@
+
+  @keyframes move-horizontal {
+    0% {
+      transform: translateX(0); /* Starting position */
+    }
+    50% {
+      transform: translateX(50px); /* Move right */
+    }
+    100% {
+      transform: translateX(0); /* Return to the starting position */
+    }
+  }
+
+
+@keyframes move-vertical {
+    0% {
+      transform: translateY(-100px); /* Starting position */
+    }
+    50% {
+      transform: translateY(50px); /* Move down */
+    }
+    100% {
+      transform: translateY(-100px); /* Return to the starting position */
+    }
+  }
