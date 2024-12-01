@@ -1,0 +1,11 @@
+form button{
+    border: none; color: white; background-color: rgb(68, 68, 255); width:60% ;margin-top:18px ;padding: 10px;  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);  
+}
+form button:disabled {
+    background-color:  rgba(130, 130, 189, 0.8);
+    cursor: not-allowed;
+  }
+
+  #termsCheckbox {
+    margin-right: 10px;
+  }

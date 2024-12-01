@@ -40,7 +40,7 @@ nav h1{
 
 #welcome{
     padding: 293px 295px 133px 295px;
-    background: linear-gradient(90deg,  rgba(31, 29, 29, 0.4),  rgba(10, 10, 11, 0.4)),  url('/img/ladyholdingphone.png'); /* Define your gradient here */
+    background: linear-gradient(90deg,  rgba(31, 29, 29, 0.4),  rgba(10, 10, 11, 0.4)),  url('/client/img/ladyholdingphone.png'); /* Define your gradient here */
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -262,10 +262,53 @@ gap: 30px;
 #clients div p{
    opacity: 0.7;
 }
-
-
-
-
+footer .footer-grid{
+    padding: 94px 190px 79px 295px;
+    background-color: rgb(26, 26, 248);
+   color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+  gap: 20px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.footer-offer{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.footer-offer p{
+    line-height: 30px;
+}
+.address a{
+    text-decoration: none;
+   color: white;
+   line-height: 30px;
+   opacity:0.9 ;
+}
+.address a:hover{
+   color: rgba(255, 255, 255, 0.487);
+}
+footer .logo{
+    background-color: rgb(26, 26, 248);
+   color: white;
+}
+footer .logo p{
+    opacity: 0.7;
+}
+.contact-Info{
+    line-height: 40px;
+}
+.contact-Info span{
+    color: #e6bfac;
+}
+.contact-Info span{
+    color: #e6bfac;
+}
+.contact-Info span:hover{
+ text-decoration: underline;
+}
 /* background-color: rgb(243,245,251);
 display: flex;
 justify-content: center;

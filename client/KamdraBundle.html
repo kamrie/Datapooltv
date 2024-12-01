@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="/css/KamdraBundle.css">
-    <link rel="stylesheet" href="/css/animations.css">
-    <link rel="stylesheet" href="/css/dataplans.css">
+    <link rel="stylesheet" href="/client/css/animations.css">
+    <link rel="stylesheet" href="/client/css/dataplans.css">
+    <link rel="stylesheet" href="/client/css/carousel.css">
+    <link rel="stylesheet" href="/client/css/KamdraBundle.css">
+
 
 
     <title>KamdraBundle</title>
@@ -19,12 +21,12 @@
 
          <div class="nav-links">
             <ul>
-                <li> <a href="">Home</a> </li>
-                <li><a href="">About us</a></li>
+                <li> <a href="/KamdraBundle.html">Home</a> </li>
+                <li><a href="#why-choose-us">About us</a></li>
                 <li> <a href="">Services</a></li>
-                <li> <a href="">Pricing</a></li>
-                <li> <a href="">Login</a></li>
-                <li> <a href="">Register</a></li>
+                <li> <a href="#dataPlans">Pricing</a></li>
+                <li> <a href="/client/signIn.html" id="login-link">Login</a></li>
+                <li> <a href="/client/signUp.html">Register</a></li>
 
             </ul>
            
@@ -112,7 +114,7 @@
      <section id="why-choose-us">
             <div class="whychooseUs-para">
                 <h1>
-                    Why is KAMDRA BUNDLE is the Best Choice ?
+                    Why is KAMDRA BUNDLES the Best Choice ?
                 </h1>
                 <p>
                     We offer instant recharges for Airtime, Databundle, Cable TV (DStv, GOtv, Startimes), and Electricity Bills....
@@ -147,20 +149,20 @@
                     </div>
 
                     <div class="container">
-                        <img width="111" src="/img/wave-image.png" alt="Wave" class="wave">
-                        <img src="/img/rectangle-image.png" alt="Rectangle" class="rectangle">
+                        <img width="111" src="/client/img/wave-image.png" alt="Wave" class="wave">
+                        <img src="/client/img/rectangle-image.png" alt="Rectangle" class="rectangle">
                    </div>
                 <!-- </div> -->
             </div>
             <div>
-                <img width="812" src="/img/onePeople-img.jpg" alt="" srcset="">
+                <img width="812" src="/client/img/onePeople-img.jpg" alt="" srcset="">
             </div>
      </section>
 
      <section id="why-us-again">
         <div class="img-container">
-            <img class="man-with-computer" width="812" src="/img/man-with-computer.png" alt="" srcset="">
-            <img class="smartphone" width="166" src="/img/smartphone.png" alt="">
+            <img class="man-with-computer" width="812" src="/client/img/man-with-computer.png" alt="" srcset="">
+            <img class="smartphone" width="166" src="/client/img/smartphone.png" alt="">
         </div>
         <div class="whychooseUs-para">
             <h1>
@@ -187,7 +189,7 @@
              </div>
         </div>
         <div >
-            <img  width="812" src="/img/people-using-phone-img.png" alt="" srcset="">
+            <img  width="812" src="/client/img/people-using-phone-img.png" alt="" srcset="">
         </div>
    </section>
 
@@ -224,7 +226,7 @@
          <main class="card-container">  
                <!-- 9Mobile Data Card -->
                <div class="card nine-mobile">
-                    <img src="/img/9mobile.png" alt="9Mobile Data Logo">
+                    <img src="/client/img/9mobile.png" alt="9Mobile Data Logo">
                     <h3>9MOBILE DATA</h3>
                     <ul class="data-list">
                         <li><span>1.0GB</span> <span>&#8358;137</span> <span>30days</span></li>
@@ -241,7 +243,7 @@
                </div>
                <!-- GLO Data Card -->
                <div class="card glo">
-                    <img src="/img/glo-img.png" alt="GLO Data Logo">
+                    <img src="/client/img/glo-img.png" alt="GLO Data Logo">
                     <h3>GLO DATA</h3>
                     <ul class="data-list">
                         <li><span>500.0MB</span> <span>&#8358;135</span> <span>30days</span></li>
@@ -258,7 +260,7 @@
                </div>
               
                <div class="card airtel">
-                    <img src="/img/airtel-logo.png" alt="AIRTEL Data Logo">
+                    <img src="/client/img/airtel-logo.png" alt="AIRTEL Data Logo">
                     <h3>AIRTEL DATA </h3>
                     <ul class="data-list">
                         <li><span>100.0MB</span> <span>&#8358;80</span> <span>Daily</span></li>
@@ -281,7 +283,7 @@
                     </div>
                </div>
                <div class="card MTN">
-                    <img src="/img/" alt="MTN Data Logo">
+                    <img src="/client/img/MTN-logo.png" alt="MTN Data Logo">
                     <h3>MTN DATA </h3>
                     <ul class="data-list">
                         <li><span>500.0GB</span> <span>&#8358;125</span> <span>1 MONTH (DATA SHARE)</span></li>
@@ -314,50 +316,52 @@
          </main>
     </section>
     
-    <section>
-          <div>
+    <section id="testimonial-carousel">
               <h1>Users Testimonials </h1>
-              <p>Checokut these feedbacks from some of our satisfied customers</p>   
-          </div>
+              <p>Checkout these feedbacks from some of our satisfied customers</p>   
 
-                  <!-- Testimonial 1 -->
-          <div>
-               <div><img src="user1.png" alt="User 1"></div>
-               <div>
-                    <p>"I spent alot of money for data subscription until a friend told me about KamdraBundle, now I can connect with my customers online better "</p>
-                    <h3>Funmilayo Adesola</h3>
-                    <p class="user-role">Business man</p>
-               </div>             
-          </div>
+             <!-- Testimonial 1 -->
+            <div  class="carousel">
+                <div  class="testimonial active">
+                    <img src="user1.png" alt="User 1">
+                   
+                        <p>"I spent alot of money for data subscription until a friend told me about KamdraBundle, now I can connect with my customers online better "</p>
+                        <h3>Funmilayo Adesola</h3>
+                        <p class="user-role">Business man</p>
+                                
+                 </div>
+                <!-- Testimonial 2-->
+                <div  class="testimonial ">
+                        <img src="user1.png" alt="User 1">
+                    
+                            <p>"Great service and fast delivery! Would recommend to others without a doubt. ⭐⭐⭐⭐"</p>
+                            <h3>Mohammed Sani</h3>
+                            <p class="user-role">Web Developer</p>
+                                    
+                </div>
+                        <!-- Testimonial 3-->
+                <div  class="testimonial ">
+                        <img src="user1.png" alt="User 1">
+                        <p>"I love the quick response to issues. I had to tell all my family memebers about it. If i'm to give a star? I give  ⭐⭐⭐⭐ for shure"</p>
+                        <h3>Joy Okoli</h3>
+                        <p class="user-role">Student</p>     
+                </div>
 
-                  <!-- Testimonial 2-->
-          <div>
-                <div><img src="user1.png" alt="User 1"></div>
-                <div>
-                    <p>"Great service and fast delivery! Would recommend to others without a doubt. ⭐⭐⭐⭐"</p>
-                    <h3>Mohammed Sani</h3>
-                    <p class="user-role">Web Developer</p>
-                </div>             
-         </div>
 
-                         <!-- Testimonial 3 -->
-        <div>
-            <div><img src="user1.png" alt="User 1"></div>
-            <div>
-                <p>"I love the quick response to issues. I had to tell all my family memebers about it. If i'm to give a star? I give  ⭐⭐⭐⭐ for shure"</p>
-                <h3>Joy Okoli</h3>
-                <p class="user-role">Student</p>
-
-            </div>             
-      </div>
+                   <!-- Navigation Buttons -->
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>       
     </section>
 
     <footer>
         <div class="footer-grid">
                  <div class="footer-offer">
+                    <h2>DREAMDATA</h2>
                     <P>We offer instant recharge of Airtime, Databundle, CableTV (DStv, GOtv & Startimes), Electricity Bill Payment and more.</P>
                  </div>
                  <div class="address">
+                    <h3>Links</h3>
                     <p><a href="">Home</a></p>
                     <p><a href="">About Us</a></p>
                     <p><a href="">Services</a></p>
@@ -365,22 +369,25 @@
                     <p><a href="">Register</a></p>
                  </div>
                  <div class="contact-Info">
+                    <h3>Contact Us</h3>
                      <p>Address: <span>No 29. lifecamp , Abuja, FCT.</span> </p>
-                     <p>Email: <span>ifedikeze2gmail.com</span> </p>
+                     <p>Email: <span>ifedikeze@gmail.com</span> </p>
                      <p>Phone: <span>2348028263434</span> </p>
                  </div>
          </div>
           <div class="logo">
               <p>&copy; 2023 KamdraDigital. All Rights Reserved.</p>
            <div>
+  </footer>
    
             
-    <script src="/js/jquery.js"></script>
-    <script src="/js/jquery.counterup.min.js"></script>
-    <script src="/js/jquery.waypoints.min.js"></script>
-    <script src="/js/typed.js"></script>
+    <script src="/client/js/jquery.js"></script>
+    <script src="/client/js/jquery.counterup.min.js"></script>
+    <script src="/client/js/jquery.waypoints.min.js"></script>
+    <script src="/client/js/typed.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/client/js/main.js"></script>
+    <script src="/client/js/carousel.js"></script>
 </body>
 </html>
