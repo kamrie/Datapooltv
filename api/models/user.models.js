@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
         trim: true,
 
     },
-   fullname: {
+   fname: {
         type: String,
         required: true,
         trim: true,
@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
      match: /^(\+\d{1,3})?\d{10,15}$/,
      trim: true,
      },
- referralUsername: {
+ referralUser: {
     type: String,
     trim: true,
     default: null, // Optional field
