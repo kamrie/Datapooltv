@@ -83,6 +83,7 @@ document.getElementById('signUpForm').addEventListener('submit', async function 
                 console.log("signUpData", signUpData)
                 console.log("Form submitted successfully")
       
+
                  // Submit form data to the server
             try {
                 const response = await fetch('http://localhost:3500/api/auth/signup', {
@@ -102,15 +103,15 @@ document.getElementById('signUpForm').addEventListener('submit', async function 
                     console.log("Data responser", data);
                     alert("Registration successful! Welcome aboard.");
                     document.getElementById('signUpForm').reset(); // Reset the form
+                    window.location.href = '/client/signin.html'; // Redirect to the login page
 
                 }else{
                     const error = await response.json();
-                    console.error("Server error details:", error.message);
+                    console.error("Server error details:", error.message); //this error.message value is specified in the backend 
                     showError(error.message || "Something went wrong. Please try again.")
-                    document.getElementById('signUpForm').reset(); // Reset the form
 
                 }
-
+              
 
             } catch (err) {
                 console.log("Chai Network error", err);

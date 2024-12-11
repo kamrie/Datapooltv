@@ -10,7 +10,7 @@ dotenv.config(); //initializing it so it can be used
 mongoose.connect(process.env.MONGO).then(() => {
     console.log("connected to Monogodb!!!")
 }).catch((err) => {
-     console.log(err)
+     console.log('Mongo connection error',err.message)
 })
 
 const app = express();
@@ -27,4 +27,18 @@ app.use('/api/auth', authRouter)
 
 // app.post("/signup", ( req, res) => {
 //     console.log(req.body)
-// })
+// }) 
+
+
+
+
+app.use((err, req, res, next) => {
+    const statusCode = err.statusCode || 500;
+    const message = err.message ||  'Internal server erroror'
+    return res.status(statusCode).json({
+        success: false,
+        statusCode,
+        message
+
+    })
+})
