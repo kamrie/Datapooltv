@@ -10,7 +10,6 @@ console.log(passwordRegX.test("yecretAassw8or890@gmail.")); // true
 
 let errorParagraph= document.getElementById("error")
 console.log(errorParagraph)
-// const form = document.getElementById('signUpForm'); 
 const username = document.getElementById('username'); 
 const fname = document.getElementById('fname'); 
 const email = document.getElementById('email'); 
@@ -35,10 +34,13 @@ termsCheckbox.addEventListener('change', () => {
 function showError(message) {
     const errorParagraph= document.getElementById("error")
     errorParagraph.textContent = message; // Set the error message
+     errorParagraph.style.display = 'block'; // Show the error
+
     setTimeout(() => { 
-        errorParagraph.textContent = ""; }
-           , 5000);
-    // errorElement.style.display = 'block'; // Show the error
+        errorParagraph.textContent = ""; 
+        errorParagraph.style.display = 'none'; // Show the error
+
+    } , 5000);
   }
   
 //Form submission event listener

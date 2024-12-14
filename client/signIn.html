@@ -16,8 +16,9 @@
                     <!-- <h3 class="fs-5">Kamdra Bundles </h3> -->
                     <h4 class="m-5 fw-bold">Login to Proceed</h4>
 
-                    <form id="loginForm" action="/signin" method="post">
-                               
+                    <form id="loginForm" action="/signin" method="post"  style="position: relative;">
+                        <p id="error" style="background-color: red; color: white; padding: 10px 44px; position: absolute; left: 100px; top:-41px; display: none;" ></p>
+ 
                                 <label for="username" class="fw-bold m-3">Username</label>
                                 <input style="background-color: rgb(245,245,251); border: none; padding: 8px;  width:60% ; box-shadow: 3px 5px 14px rgba(0, 0, 0, 0.2);" 
                                       type="text" id="username"  name="username" placeholder="Username" required><br>
@@ -34,7 +35,7 @@
                         
                         <div>
                                     <p class="">
-                                        Don't have any account? <span><a href="/client/signUp.html" style="color: rgb(68, 68, 255);  ">Sign Up</a></span>
+                                        Dont have any account? <span><a href="/client/signUp.html" style="color: rgb(68, 68, 255);  ">Sign Up</a></span>
                                     </p>
                     
                                     <p class="ms-5"><a  href="" style="color:rgb(68, 68, 255);">Forgot Password ?</a></p>
