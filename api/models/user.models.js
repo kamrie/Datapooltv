@@ -45,6 +45,10 @@ const userSchema = new mongoose.Schema({
     required: true,
     default: false,
   },
+  walletBalance: {
+   type: Number,
+   default: 0, // New field for tracking user balance
+ },
 },  { timestamps: true } )  // Adds createdAt and updatedAt fields automatically
 
 

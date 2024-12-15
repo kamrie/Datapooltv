@@ -29,6 +29,9 @@ app.use('/api/auth', authRouter)
 //     console.log(req.body)
 // }) 
 
+// To prioritize API integration and design your backend for data and subscription services, follow these steps:
+// The database you created for storing registered users is just the starting point and
+//Let's break it down step by step so you can understand how to create the user dashboard:
 
 
 
